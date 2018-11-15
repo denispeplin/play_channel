@@ -23,13 +23,15 @@ defmodule PlayChannelWeb do
       import Plug.Conn
       import PlayChannelWeb.Router.Helpers
       import PlayChannelWeb.Gettext
+      alias PlayChannel.Repo
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/play_channel_web/templates",
-                        namespace: PlayChannelWeb
+      use Phoenix.View,
+        root: "lib/play_channel_web/templates",
+        namespace: PlayChannelWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]

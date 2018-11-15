@@ -4,6 +4,8 @@ defmodule PlayChannelWeb.UserSocket do
   ## Channels
   # channel "room:*", PlayChannelWeb.RoomChannel
 
+  channel("toys:*", PlayChannel.ToyChannel)
+
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
   # transport :longpoll, Phoenix.Transports.LongPoll

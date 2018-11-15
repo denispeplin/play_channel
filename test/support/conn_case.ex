@@ -20,6 +20,7 @@ defmodule PlayChannelWeb.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
       import PlayChannelWeb.Router.Helpers
+      alias PlayChannel.Repo
 
       # The default endpoint for testing
       @endpoint PlayChannelWeb.Endpoint

@@ -1,15 +1,16 @@
 # PlayChannel
 
-To start your Phoenix server:
+This application was built from https://github.com/joekain/play_channel/tree/pre-gen-event by creating a new Phoenix 1.3 application
+and copying all relevant files to it.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+Article: http://learningelixir.joekain.com/pushing-model-changes-to-a-phoenix-channel/
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Usage
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+Run application, go to `/toys`, create a toy, open `show` for it, and edit the toy in a separate tab.
+You should see toy changed in a first tab, and development console populated with logs.
+
+
 
 ## Learn more
 

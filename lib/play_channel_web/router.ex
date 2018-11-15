@@ -16,7 +16,8 @@ defmodule PlayChannelWeb.Router do
   scope "/", PlayChannelWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get("/", PageController, :index)
+    resources("/toys", ToyController)
   end
 
   # Other scopes may use custom stacks.
